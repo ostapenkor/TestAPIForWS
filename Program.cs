@@ -15,7 +15,7 @@ namespace TestAPIForWS
             Program program = new Program();
             string response1 = await program.client.GetStringAsync("https://evilinsult.com/generate_insult.php?lang=en&type=json");
             //Console.WriteLine(response);
-
+            //dkdlsdsklsdlskdlskslksdlskdlskdlskdlsd
             Insult insult = JsonConvert.DeserializeObject<Insult>(response1);
             Console.WriteLine(insult.insult+"\n");
             var client = new HttpClient();
